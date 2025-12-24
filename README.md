@@ -1,6 +1,7 @@
-Frontend Training For Apexon Training Strating with Html,Css and Js
+# Frontend Training For Apexon Training Strating with Html,Css and Js
 
-Day 1(24/12/2025)
+# Day 1(24/12/2025)
+
 # Learned basics of Html and diffrent tags.
 # Learn about CSS and its implementation 
 # Created a basic Timetable using HTML
