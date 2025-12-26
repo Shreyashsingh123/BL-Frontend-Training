@@ -4,48 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-    body{
-    background-color: rgb(39, 201, 193);
+  body{
+    background-color: lightsalmon;
     opacity:1;
     /* make transparent at 1 high opacity more transparent */
 }
 h1{
     color:Red;
     text-align: center;
-    /* background-color: yellow; */
+    background-color: yellow;
     font-size: 80px;
-margin-bottom:40px;
-margin-top: 0px;
+    margin-top: 0px;
+/* display:inline; */
+width: 50%;
+border:4px solid black;
+border-radius: 25px;
 }
 p{
-    margin-left:70%;
-    margin-top: 0px;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
+    margin: auto;
     background-color: rgba(15,0,0,0.5);
     color:red;
     font-size: 50px;
-    margin-bottom: 10px;
-    border: solid;
-    border-color: black;
-    border-radius: 2px;
-    border-width: 5px;
-    border-radius: 20px;
+    width: 50%;
+    border:4px solid black;
+    border-radius: 25px;
+    text-align: center;
 }
 h2{
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-bottom: 40px;
+    margin-left: 60%;
+    /* margin-right: 20%; */
     text-align: center;
-    /* background-color: red; */
-    border: 2px solid black;
-    border-width: 5px;
-    border-radius: 20px;
+    background-color: red;
     font-size: 50px;
     font-family: 'Courier New', Courier, monospace;
 color:blue;
+border:4px solid black;
+border-radius: 25px;
 }
 #head2{
-    color:red;
+    color:yellow;
     /* this will override h2 font color to yellow */
 }
 h3{
@@ -55,19 +53,44 @@ h3{
 }
 .head3{
 
-   
+   text-align: center;
     border: solid;
     border-color: black;
-    border-radius: 2px;
+    border-radius: 25px;
     border-width: 5px;
     border-radius: 20px;
     font-size: 50px;
-    margin-right: 70%;
-    /* margin-left: 25%; */
+    margin-right: 30%;
+    margin-left: 23%;
+    width:50%;
     color:rgb(255, 0, 0);
     background-color: rgba(0,0,0,0.5);
     /* make the bgc black with blur because of last value that is alpha=0.5 */
     /* if alpha =0 it will transparent  */
+}
+#items{
+    height:150px;
+    display:flex;
+    /* justify-content: flex-end; */
+    /* flex-flow:row-reverse; */
+    /* flex-wrap:nowrap; */
+    /* flex-direction: row-reverse; */
+    align-items: center;
+    align-content: center;
+    background-color: #fff;
+}
+#i1, #i2,#i3,#i4{
+    margin:10px;
+    border:2px solid black;
+    border-radius: 10px;
+    width:100px;
+    height:50px;
+    margin: 10px;
+    padding: 10px;
+    background-color: red;
+    font-size: 20px;
+    text-align: center;
+  
 }
 </style>   
 </head>
@@ -76,5 +99,12 @@ h3{
     <p>move to right</p>
      <h2 id="head2">This is Second Heading</h2>
   <h3 class="head3">Move to the Left</h3>
+  <div id="items">
+    <div id="i1">flex1</div>
+    <div id="i2">flex2</div>
+    <div id="i3">flex3</div>
+    <div id="i4">flex4</div>
+
+  </div>
     </body>
 </html>
