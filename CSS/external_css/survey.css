@@ -2,7 +2,7 @@ h1{
     text-align: center;
 }
 #first{
-    background-color: lightblue;
+    background-color: rgb(127, 210, 238);
     border: 2px solid black;
 }
 #second{
@@ -59,4 +59,9 @@ p{
 #improve{
     margin-left:35%;
     margin-top: 0%;
+}
+#btn{
+    background: 2px solid black;
+    width:15px;
+    color: aliceblue;
 }
