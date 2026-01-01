@@ -1,0 +1,156 @@
+
+.container{
+    display: flex;
+    flex-direction: column;
+    border: 5px solid black;
+    margin: 0px;
+}
+#h{
+    margin:0px;
+}
+.nav{
+    margin: 0px;
+    
+    background-color: pink;
+    text-align: center;
+height:50px;
+}
+#footer{
+    background-color: lightblue;
+    text-align: center;
+    margin:0px;
+height:50%;
+/* position:fixed; */
+}
+#i{
+ display: flex;
+ flex-direction:row;
+ 
+}
+
+#main{
+    order:2;
+    background-color: white;
+    text-align: center;
+height:50vh;
+width:40%;
+padding-top:20px;
+}
+
+#left{
+    order:1;
+    background-color: goldenrod;
+    text-align: center;
+    height:50vh;
+    width:30%;
+    padding-top:20px;
+}
+#right{
+    order:3;
+    background-color: lightgreen;
+    text-align: center;
+    height:50vh;
+    width:30%;
+    margin-right:0px;
+    padding-top:20px;
+}
+
+
+/* for tablet */
+  @media (min-width: 600px) and (max-width:900px){
+  #i{
+    flex-wrap: wrap; 
+    flex-direction: row;
+  }
+
+  #main{
+    width: 100%; 
+    height:15vh;         
+    order: 1;
+  }
+
+  #left{
+    width: 50%;
+    order: 2;
+    height:25vh;
+  }
+
+  #right{
+    width: 50%;
+    order: 3;
+    height:25vh;
+  }
+}
+
+@media  (max-width:600px){
+    .container{
+        display: flex;
+        flex-direction: column;
+      }
+      
+      #i{
+        display: flex;
+        flex-direction: column; 
+      }
+      
+      #left, #main, #right{
+        width: 100%;
+        height:8vh;
+      }
+      #left{
+        order:2;
+      }
+      #main{
+        order:1;
+      }
+      #right{
+        order:3;
+      }
+      
+}
+#btn{
+  width:max-content;
+  border:2px solid black;
+  border-radius: 2px;
+  height:auto;
+margin-left:45%;
+}
+#btn{
+  cursor:pointer;
+  background-color: grey;
+}
+btn-clicked{
+  background-color: red;
+  cursor:pointer;
+  
+}
+
+/* button click */
+
+.mobile-view .container{
+  display: flex;
+  flex-direction: column;
+  width:40%;
+  margin-top: 10%;
+  margin-left: 25%;
+}
+
+.mobile-view #i{
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-view #left,
+.mobile-view #main,
+.mobile-view #right{
+  width: 100%;
+  height: 8vh;
+}
+
+.mobile-view #left{ order:2; }
+.mobile-view #main{ order:1; }
+.mobile-view #right{ order:3; }
+.mobile-view .viewport{
+  width: 375px;   /* mobile width */
+  border: 3px solid red;
+}
