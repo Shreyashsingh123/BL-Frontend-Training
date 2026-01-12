@@ -12,3 +12,5 @@ if(arr[i]>max)max=arr[i];
 }
 console.log("Minimum number is "+" "+min);
 console.log("Maximum number is"+" "+max);
+
+// using mina nd max find the minimum and maximun number etween elements in the array
